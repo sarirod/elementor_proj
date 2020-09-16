@@ -15,3 +15,51 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned
 with others.
 */
+
+/* HOMEPAGE GRID */
+#post-inner .entry-content > .products_grid {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#post-inner .entry-content > .products_grid .grid_box {
+    width: 32%;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 300px;
+    max-width: 330px;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+}
+
+.entry-image img {
+    width: 100%;
+}
+
+#post-inner .entry-content > .products_grid .grid_box h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px auto 20px;
+}
+
+#post-inner .entry-content > .products_grid a {
+    text-decoration: none;
+}
+
+#post-inner .entry-content > .products_grid .grid_box .entry-image {
+    position: relative;
+}
+
+#post-inner .entry-content > .products_grid .on_sale_absolute {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background: url(https://sari.elementor.cloud/wp-content/uploads/2020/09/sale.png);
+    background-size: 73px;
+    background-position: -10px -20px;
+}
