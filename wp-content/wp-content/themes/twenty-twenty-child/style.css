@@ -63,3 +63,79 @@ with others.
     background-size: 73px;
     background-position: -10px -20px;
 }
+
+/* SINGLE PRODUCT POST */
+
+.single_product_main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+}
+
+.single_product_main .title_single_product {
+    text-align: center;
+}
+
+.single_product_main .content_single_product iframe {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 280px;
+    display: inline-block;
+}
+
+.single_product_main .price_single_product,.single_product_main .sale_price_single_product {
+    text-align: left;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.single_product_main .price_single_product.onsale {
+    text-decoration: line-through;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* RELATED POST */
+
+.related_post_product {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+}
+
+.related_post_product .related_item {
+    width: 33%;
+    display: inline-block;
+    padding: 10px 20px;
+    min-width: 300px;
+}
+
+.related_post_product .related_item ul,.related_post_product .related_item ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.related_post_product .related_item a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.related_post_product .related_item a p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
