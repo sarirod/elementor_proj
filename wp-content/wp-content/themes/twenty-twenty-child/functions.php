@@ -97,3 +97,13 @@ function register_shortcodes(){
 }
 
 add_action( 'init', 'register_shortcodes');
+
+/* FILTER TO OVERRIDE THE SHORTCODE OUTPUT */
+
+function add_output_to_original( $return_string, $tag ) {
+	if ( 'product-box' !== $tag ) {
+		return $return_string;
+	}
+	return $return_string . '<div class="box_prod_additional"></div>';
+}
+add_filter('do_shortcode_tag', 'add_output_to_original', 10, 2);
