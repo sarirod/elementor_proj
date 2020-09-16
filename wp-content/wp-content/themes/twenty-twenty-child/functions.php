@@ -77,7 +77,23 @@ function my_taxonomies_product() {
 }
 add_action( 'init', 'my_taxonomies_product', 0 );
 
+/* ADD PRODUCT BOX SHORTCODE */
 
+function product_box_function($atts = '') {
+	$value = shortcode_atts( array(
+        		'id' => 50,
+        		'bg' => red,
+    	), $atts );
 
+	if($value['id']){
+		$post_box = get_post($value['id']);
+		$return_string = '<div class="box_product_short" style="background-color:'.$value['bg'].'"><div class="box_title">'.$post_box->post_title.'</div><div class="box_img"><image src="'.  get_field( 'main_image', $value['id']).'"></div><div class="box_price">'.get_field('price',$value['id']).'</div></div>';
+   	}
+   return $return_string;
+}
 
+function register_shortcodes(){
+   add_shortcode('product-box', 'product_box_function');
+}
 
+add_action( 'init', 'register_shortcodes');

@@ -139,3 +139,32 @@ with others.
     text-align: justify;
 }
 
+/* BOX SHORT CODE */
+
+.box_product_short {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    border: 3px solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    color: #423a3a;
+}
+
+.box_product_short .box_title {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.box_product_short .box_img {
+    text-align: center;
+}
+
+.box_product_short .box_img img {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
